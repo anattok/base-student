@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.set-panel {
+  margin: 30px 0;
+}
+.students {
+  border-radius: 20px;
+}
+.student {
+  list-style: none;
+  width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+  font-size: 18px;
+  border: 1px solid #1b9ff7;
+  padding: 10px 0px;
+  position: relative;
+}
+.student__delete{
+  position: absolute;
+  top: 7px;
+  right: 6px;
+  border: 1px solid #1b9ff7;
+  padding: 5px 10px;
+  background-color: transparent;
+  cursor: pointer;
+}
+.student__delete:hover{
+  background-color: #1b9ff7;
+  color: #fff;
+}
+
+.header {
+  display: flex;
+}
+.header p {
+  margin-left: 20px;
+}
+.student__id,
+.student__name,
+.student__age,
+.student__gender,
+.student__beginnerCourse {
+  margin-left: 20px;
+}
+
+.student__id,
+.header__id {
+  width: 30px;
+}
+.student__name,
+.header__name {
+  width: 100px;
+}
+.student__age,
+.header__age {
+  width: 50px;
+}
+.student__gender,
+.header__gender {
+  width: 50px;
+  overflow: hidden;
+  margin-right: 20px;
+
+}
+.student__beginnerCourse,
+.header__beginnerCourse {
+  width: 80px;
+  overflow: hidden;
+}
+.set-panel{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.set-panel__gender {
+  display: flex;
+}
+
+.set-panel__name-label,
+.set-panel__name-input,
+.set-panel__age-label,
+.set-panel__age-input, 
+.set-panel__male-label,
+.set-panel__male-input,
+.set-panel__female-label,
+.set-panel__female-input,
+.set-panel__course-label,
+.set-panel__course-input{
+  display: block;
+}
+
+.set-panel__course-input{
+ margin: 0 auto;
+}
+.set-panel__female-label{
+  margin-left: 10px;
+}
+.set-panel__male-input,
+.set-panel__female-input{
+  margin: 0 auto;
+}

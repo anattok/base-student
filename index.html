@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Students</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <form class="set-panel">
+        <div class="set-panel__name">
+          <label for="name" class="set-panel__name-label">Имя студента</label>
+          <input type="text" id="name" class="set-panel__name-input" />
+        </div>
+        <div class="set-panel__age">
+          <label class="set-panel__age-label" for="age">Возраст студента</label>
+          <input type="text" id="age" class="set-panel__age-input" />
+        </div>
+        <div class="set-panel__gender">
+          <div class="set-panel__male">
+            <label class="set-panel__male-label" for="male">male</label>
+            <input
+              type="radio"
+              id="male"
+              name="gender"
+              value="м"
+              class="set-panel__male-input"
+            />
+          </div>
+          <div class="set-panel__female">
+            <label class="set-panel__female-label" for="female">female</label>
+            <input
+              type="radio"
+              id="female"
+              name="gender"
+              value="ж"
+              class="set-panel__female-input"
+            />
+          </div>
+        </div>
+        <div class="set-panel__course">
+          <label for="course" class="set-panel__course-label"
+            >Курс пройден</label
+          >
+          <input type="checkbox" id="course" class="set-panel__course-input" />
+        </div>
+
+        <button class="set-panel__btn">Добавить в базу</button>
+      </form>
+      <div class="header">
+        <p class="header__id">id</p>
+        <p class="header__name">Имя</p>
+        <p class="header__age">Возраст</p>
+        <p class="header__gender">М/Ж</p>
+        <p class="header__beginnerCourse">Курс пройден</p>
+      </div>
+      <div class="students">
+        <div class="student">1</div>
+        <div class="student">2</div>
+        <div class="student">3</div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
